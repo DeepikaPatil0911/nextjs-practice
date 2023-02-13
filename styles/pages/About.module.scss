@@ -1,0 +1,17 @@
+@import "../helpers/helpers.scss";
+
+.wrapper {
+   height: 30vh;
+   width: 50vw;
+   
+
+   .wrapper2{
+      height: 10vh;
+   width: 30vw;background-color: var(--color_primary);
+   }
+
+
+   &.wrapper_next{
+      background-color: red;
+   }
+}
