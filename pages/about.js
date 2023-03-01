@@ -15,6 +15,3 @@ const about = () => {
    )
 }
 
-export default about
-
-// rafce to import

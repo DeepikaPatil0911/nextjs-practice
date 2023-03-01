@@ -7,6 +7,16 @@ import Header from "../components/Header";
 import img from "../public/img/Group 1831.png"
 import image1 from "../public/img/minimising-waste.png"
 import image2 from "../public/img/Group 803.png"
+import map_img from "../public/img/map-img.png"
+import india_img from "../public/img/india-img.png"
+import thailand_img from "../public/img/thailand.png"
+import dubai_img from "../public/img/dubai-img.png"
+import jordan_img from "../public/img/jordan-img.png"
+import loction_icon from "../public/img/location.png"
+import email_icon from "../public/img/Icon material-email.png"
+import call_icon from "../public/img/Icon ionic-ios-call.png"
+import samir_img from "../public/img/samir-lakhani.png"
+import innovatin_img from "../public/img/innovatin-img.png"
 import Image from "next/image";
 
 export default function Home() {
@@ -30,7 +40,7 @@ export default function Home() {
                   <p className={`${styles.p2} `}>It gives us immense joy to be able to bring about creativity to each event, season after season. Even after 50 years, we work with the same enthusiasm and zeal to revolutionise the hospitality and catering industry.</p>
                </div>
             </div>
-            <div className={`${styles.committed_section} container`}>
+            <div className={`${styles.committed_section} container sec-padding`}>
                <h2 className={`${styles.heading_committed} `}>Committed to unforgettableexperiences and sustainable practices </h2>
                <div className={`${styles.recycling_sec} `}>
                   <div className={`${styles.img_content} `}> <Image src={image2} /></div>
@@ -40,13 +50,79 @@ export default function Home() {
                      <p></p>
                   </div>
                </div>
-               <div className={`${styles.Minimising_sec} `}>
+               <div className={styles.Minimising_sec}>
                   <div className={`${styles.Minimising_content} `}> <Image src={image1} /></div>
                   <div className={`${styles.Minimising_text} `}>
-                     <h3>Recycling every ounce of food into energy</h3>
-                     <p>While food waste is unavoidable, what we do commit to is never letting the food waste go unused. Our team of experts constantly works towards channelling food waste to biomass plants across the host city. </p>
+                     <h3>Minimising waste through conscious planning</h3>
+                     <p>Our ERP software and experts ensure that every minute detail is accounted for, while planning an event. The raw material ordered is tailored to each event to ensure that your celebrations never have a lasting impact on the environment. Our banquet is also centrally equipped with economical PNG gas and the use of disposable supplies is minimal.</p>
                   </div>
                </div>
+            </div>
+            <div className={`${styles.spreading_smiles_sec} container sec-padding`}>
+               <div className={`${styles.spreading_content} `}>
+                  <div className={`${styles.spreading_text} `}> <p>Spreading smiles across
+                     India and beyond</p></div>
+                  <div className={`${styles.map_sec} `}><Image src={india_img} /> <Image src={thailand_img} /> <Image src={dubai_img} /> <Image src={jordan_img} /></div>
+
+               </div>
+               <div className={`${styles.map_sec} `}><Image src={map_img} />
+
+               </div>
+            </div>
+            {/* <div className={`${styles.form_sec} container sec-padding`}>
+               <div className={`${styles.form_text}`}>
+                  <h2>Lets start planning your big day, shall we?</h2>
+                  <div className={`${styles.location_info} `}> <Image src={loction_icon} />
+                     <p>We’d love to meet you!
+                        Samir Lakhani Hospitality 304, Bombay Market, Tardeo Road,
+                        Mumbai 400034. Tel : 022-23530195 | 022-23517615</p>
+                  </div>
+                  <div className={`${styles.email_info} `}> <Image src={email_icon} />
+                     <p>Get in touch with us at
+                        info@samirlakhani.in  |  samir@samirlakhani.in</p>
+                  </div>
+                  <div className={`${styles.call_info} `}> <Image src={call_icon} />
+                     <p>Call us on
+                        +91 9820184241</p>
+                  </div>
+               </div>
+               <div className={`${styles.form_box}`}>
+                  <form className={`${styles.form_box_text}`}>
+                     <label for="name">Name:</label>
+
+                     <input type="text" id="name" name="name" required
+                        minlength="4" maxlength="8" size="10" />
+                  </form>
+               </div>
+            </div> */}
+            <div className={`${styles.our_cuisine_sec} container sec-padding`}>
+               <h2>Our cuisine palette</h2>
+               <div className={`${styles.our_cuisine_content} `}>
+                  <div className={`${styles.samir_lakhani_sec} `}>
+                     <div className="samir_img"><Image src={samir_img} /></div>
+                     <div className="samir_text_sec">
+                        <h3>The Samir Lakhani
+                           hospitality™️ experience</h3>
+                        <p>Global-scale services, anywhere in the world</p>
+                        <p>Taste authenticity in every bite</p>
+                        <p>Experience live stations like never before</p>
+                     </div>
+                  </div>
+                  <div className="innovation_sec">
+                     <div className="samir_img"><Image src={innovatin_img} /></div>
+                     <div className="innovation_text_sec">
+                        <h3>Innovation at the heart
+                           of everything we do</h3>
+                        <p>Adding colours to every celebration with
+                           new fusion cocktails</p>
+                        <p>Exploring new culinary possibilities through
+                           Molecular Gastronomy</p>
+                        <p>Bringing a touch of class with French-inspired
+                           plated desserts</p>
+                     </div>
+                  </div>
+               </div>
+
             </div>
          </main>
          <Footer />
