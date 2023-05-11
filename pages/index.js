@@ -102,7 +102,7 @@ export default function Home() {
                      <div className="samir_img"><Image src={samir_img} /></div>
                      <div className="samir_text_sec">
                         <h3>The Samir Lakhani
-                           hospitality™️ experience</h3>
+                           hospitality™️          experience</h3>
                         <p>Global-scale services, anywhere in the world</p>
                         <p>Taste authenticity in every bite</p>
                         <p>Experience live stations like never before</p>
